@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-Img{
+    width: 100vw;
+    height: 90vh;
+    
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: white;
+    padding: 10px;
+    width: 90%;
+}
+#collapsableNavbar{
+    justify-content: space-between;
+}
+.footer-div{
+    background-color: black;
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+    height: 11vh;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("C:/Users/Emeka Chinye/Documents/Visual Studio Code/Projects/phone-number-sorting/images/forest.jpg");
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
+    background-color: rgba(198, 198, 202, 0.541);
+}
+#h2{
+   text-align: center;
+   font-size: 35px;
+}
+.carousel-text{
+    color: rgb(255, 255, 255);
+}
+.mid-carousel-text{
+    color: rgb(6, 6, 37);
+}
+.carousel-small{
+    display: none;
+}
+.assurance{
+    color: rgb(35, 114, 35);
+    font-weight: 800;
+}
+.subhead{
+    font-size: 16px;
+    font-weight: 510;
+}
+.content::first-letter{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(6, 6, 37);
+    font-size: x-large;
+}
+strong{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(6, 6, 37);
+}
+.logo{
+    font-weight: 800;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(197, 209, 224);
+}
+.img-logo{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+.inputwidth{
+    width: 55%;
+}
+.invalidHeading{
+    background-color: rgb(153, 3, 3);
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    height: 70px;
+    padding-top: 10px;
+}
+#invalid{
+    padding: 5px;
+}
+ .hideOutput{
+    display: none;
+} 
+.providerIcon{
+    width: 45px;
+    padding-left: 15px;
+}

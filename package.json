@@ -1,0 +1,12 @@
+{
+  "name": "number_sort",
+  "version": "1.0.0",
+  "description": "Project Description",
+  "scripts": {
+    "start": "serve"
+  },
+  "dependencies": {
+    "serve": "^10.0.1"
+  },
+  "author": "david"
+}
