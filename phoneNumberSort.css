@@ -3,11 +3,23 @@
     padding: 0;
     margin: 0;
 }
-
-.carousel-Img{
-    width: 100vw;
+.jumbo{
+    width: 100%;
     height: 90vh;
-    
+    background-image: url('./images/Guy-with-phone\ 6146927\ \(3\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(23, 28, 59, 0.479);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jumbo h1{
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+
 }
 .container-fluid{
     margin: 0;
@@ -15,8 +27,9 @@
 }
 .container{
     background-color: white;
-    padding: 10px;
-    width: 90%;
+    padding: 25px;
+    width: 95%;
+    border-radius: 10px;
 }
 #collapsableNavbar{
     justify-content: space-between;
@@ -31,7 +44,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url("C:/Users/Emeka Chinye/Documents/Visual Studio Code/Projects/phone-number-sorting/images/forest.jpg");
+    background-image: url("./images/forest.jpg");
     background-repeat: repeat;
     background-blend-mode: soft-light;
     background-color: rgba(198, 198, 202, 0.541);
@@ -40,15 +53,7 @@ body{
    text-align: center;
    font-size: 35px;
 }
-.carousel-text{
-    color: rgb(255, 255, 255);
-}
-.mid-carousel-text{
-    color: rgb(6, 6, 37);
-}
-.carousel-small{
-    display: none;
-}
+
 .assurance{
     color: rgb(35, 114, 35);
     font-weight: 800;
@@ -78,7 +83,11 @@ strong{
     border-radius: 100%;
 }
 .inputwidth{
-    width: 55%;
+    width: 100%;
+}
+thead{
+    background-color: rgba(8, 8, 8, 0.89);
+    text-align: center;
 }
 .invalidHeading{
     background-color: rgb(153, 3, 3);
@@ -94,6 +103,9 @@ strong{
  .hideOutput{
     display: none;
 } 
+.show{
+    display: block;
+}
 .providerIcon{
     width: 45px;
     padding-left: 15px;

@@ -1,4 +1,13 @@
+
+
+
 function sortNumber(){
+
+    //display accordion
+    let sortBtn = document.querySelector("#hideContent");
+    $("#hideContent").addClass("show");
+    $("#hideContent").remove("hideOutput");
+
     var rawNumbers = document.getElementById("output").value;
     //rawNumbers += ``; 
     var arrayOfNumbers = [];
@@ -187,30 +196,3 @@ function checkAvalability(arrayToCheck, searchValue){
 }
 
 
-/* //carousel function
-$(document).ready(function () {
-    // Activate Carousel with a specified interval
-  $("#myCarousel").carousel({interval: 500, pause:false});
-    //activate carousel
-    $("#carouselDisplay").carousel();
-
-    //activate carousel indicators
-    $("item0").click(function(){
-        $("#carouselDisplay").carousel(0);
-    });
-    $("item1").click(function(){
-        $("#carouselDisplay").carousel(1);
-    });
-    $("item2").click(function(){
-        $("#carouselDisplay").carousel(2);
-    });
-
-    //activate carousel control
-    $(".carousel-control-prev").click(function(){
-        $("#carouselDisplay").carousel("prev");
-    });
-    $(".carousel-control-next").click(function(){
-        $("#carouselDisplay").carousel("next");
-    });
-});
- */

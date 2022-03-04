@@ -5,89 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phone Number Validator</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./phoneNumberSort.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+    <script src="./PhoneNumberSort.js"></script>
 </head>
 <body>
     
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <a href="#" class="navbar-brand logo">
-            <img src="images/water-focus.jpg" alt="water image" class="img-logo">
-            Logo
-        </a>
+        <div class="container-fluid p-3">
+            <a class="navbar-brand logo" href="#">
+                <img src="images/water-focus.jpg" alt="water image" class="img-logo">
+                Logo
+            </a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsableNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="collapsableNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item ">
-                    <a href="#" class="nav-link">Link1</a>
-                </li>
-                <li class="nav-item ">
-                    <a href="#" class="nav-link">Link2</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">link3</a>
-                </li>
-            </ul>
-            <a href="#numberInput" class="btn btn-primary nav-btn">Sort Numbers</a>
-        </div>
-        
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                 <ul class="navbar-nav p-3 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>    
+                    </ul>
+                <a href="#numberInput" class="btn btn-primary nav-btn">Sort Numbers</a>
+            </div>
+        </div> 
     </nav>
 
    <div class="container-fluid">
-    <div id="carouselDisplay" class="carousel slide " data-ride="carousel"   data-pause= false>
-        <!--indicators-->
-        <ul class="carousel-indicators">
-            <li data-target= "#carouselDisplay" data-slide-to= "0" class="active"></li>
-            <li data-target="#carouselDisplay" data-slide-to="1"></li>
-            <li data-target="#carouselDisplay" data-slide-to="2"></li>
-        </ul>
-        
-
-        <!--The slideshow-->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/sad-girlWithPhone.jpg" alt="sad girl With Phone" class="carousel-Img">
-                <div class="carousel-caption">
-                    <h3 class="carousel-text">Not sure about the number?</h3>
-                    <p class="carousel-text">no need to worry anymore!</p>
-                </div>
-            </div>
-            <!-- <div class="carousel-item ">
-                <img src="images/Guy-with-phone 6146927 (3).jpg" alt="" class="carousel-Img">
-                <div class="carousel-caption">
-                    <h3 class="mid-carousel-text">The solution is here!</h3>
-                    <p class="mid-carousel-text">All you need do is, input the number</p>
-                </div>
-            </div> -->
-            <div class="carousel-item">
-                <img src="images/smile_with_phone.jpg" alt="happy girl with phone" class="carousel-Img">
-                <div class="carousel-caption">
-                    <h3 class="carousel-text">The solution is here! </h3>
-                    <p class="carousel-text"> It's the Phone Number Validator... Be 100% sure!</p>
-                </div>
-            </div>
-        </div>
-        
-
-        <!--prev left and right-->
-        <a class="carousel-control-prev" href="#carouselDisplay" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselDisplay" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-
-    </div>
+     <div class="jumbo">
+         <h1 class="animate__animated animate__zoomIn animate__repeat-2">Phone Number Validator</h1>
+     </div>
    </div>
    <br>
-    <div class="container pl-5 pr-5">
+    <div class="container">
         <h2 id="h2" class="display-4">Phone Number Verifier</h2>
         <i class="assurance">100% validity</i>
         <h4 class="subhead">check Mobile Numbers for validity</h4>
@@ -98,28 +66,48 @@
             <i>select a file below to start verifing.</i>
         </p>
         
-        <input type="file"  class="form-control inputwidth" id="numberInput"><br>
-        <textarea name="message" id="output" class="form-control inputwidth mb-2" ></textarea>
+        <input type="file"  class="form-control inputwidth shadow-none" id="numberInput"><br>
+        <textarea name="message" id="output" class="form-control inputwidth mb-2 shadow-none" ></textarea>
         
         <button class="btn btn-primary" id="showTableHead" onclick="sortNumber()">Sort Numbers</button><br>
         <br>
         <p id="numberOfValid"></p>
-        <div id="hideTableHead">
-            <table class="table table-responsive-sm table-striped">
-                <thead class="thead-dark text-white" >
-                    <tr >
-                        <th>Provider Name</td>
-                        <th>Phone Number</th>
-                    </tr>
-                </thead>
-                <tbody id="tableBody"></tbody>
-            </table>
-    
-            <div id="invalidHeading"></div>
-            <br>
-            <p id="numberOfInvalid"></p>
-            <div id="invalid"></div>
-            <p id="numberOfInvalid"></p>
+        <div class="accordion hideOutput" id="hideContent">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="displayOne">
+                    <a href="#collapseOne" class="btn btn-primary shadow-none accordion-button" data-bs-toggle="collapse"  aria-expanded="true" aria-controls="collapseOne">
+                        Show Valid Phone Numbers
+                    </a>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="displayOne" data-bs-parent="#hideContent">
+                    <div class="accordion-body">
+                        <table class="table table-responsive-sm table-striped">
+                            <thead class="text-light" >
+                                <tr>
+                                    <th>Provider Name</th>
+                                    <th>Phone Number</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="displayTwo">
+                    <a href="#collapseTwo" class="btn btn-primary shadow-none accordion-button" data-bs-toggle="collapse"  aria-expanded="true" aria-controls="collapseOne">
+                        Show Valid Phone Numbers
+                    </a>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="displayTwo" data-bs-parent="#hideContent">
+                    <div class="accordion-body">
+                        <div id="invalidHeading"></div>
+                        <br>
+                        <p id="numberOfInvalid"></p>
+                        <div id="invalid"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <br>
@@ -130,9 +118,7 @@
             </p>
         </div>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
     <script>
         document.getElementById('numberInput').addEventListener('change', function() {
             var file = new FileReader();
@@ -143,8 +129,22 @@
               
             file.readAsText(this.files[0]);
         })
+
+
+        let tableContent = document.querySelector('#tableBody');
+        let invalidList = document.querySelector('#invalid');
+        let textFeild = document.querySelector('#output');
+        let fileInput = document.querySelector('#numberInput');
+
+        if (textFeild.innerHTML == "") {
+            tableContent.innerHTML = "";
+            invalidList.innerHTML = "";  
+        }
+       
+        
+
     </script>
-    <script src="PhoneNumberSort.js"></script>
+    
     </footer>
 </body>
 </html>
