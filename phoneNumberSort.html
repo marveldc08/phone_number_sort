@@ -20,7 +20,7 @@
 <body>
     
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <div class="container-fluid p-3">
+        <div class="container-fluid p-2">
             <a class="navbar-brand logo" href="#">
                 <img src="images/water-focus.jpg" alt="water image" class="img-logo">
                 Logo
@@ -44,7 +44,7 @@
                             <a class="nav-link" href="#">Link</a>
                         </li>    
                     </ul>
-                <a href="#numberInput" class="btn btn-primary nav-btn">Sort Numbers</a>
+                    <a href="#numberInput" class="btn btn-primary nav-btn">Sort Numbers</a>
             </div>
         </div> 
     </nav>
@@ -82,7 +82,7 @@
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="displayOne" data-bs-parent="#hideContent">
                     <div class="accordion-body">
                         <table class="table table-responsive-sm table-striped">
-                            <thead class="text-light" >
+                            <thead class="thead-dark text-light" >
                                 <tr>
                                     <th>Provider Name</th>
                                     <th>Phone Number</th>
@@ -124,7 +124,7 @@
             var file = new FileReader();
             file.onload=function(){
                var b = document.getElementById('output').value= file.result;
-               console.log(b);
+              
             }
               
             file.readAsText(this.files[0]);

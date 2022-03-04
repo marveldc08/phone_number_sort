@@ -48,7 +48,7 @@ function sortNumber(){
 
     //function for sorting numbers
     var lengthOfArray = arrayOfNumbers.length;
-    //console.log(lengthOfArray);
+ 
     for (var index = 0; index < lengthOfArray; index++) {
         var secondValidity = arrayOfNumbers[index];
         var numberPrefix = secondValidity.slice(0,4);
@@ -60,7 +60,7 @@ function sortNumber(){
 
                 if(isValidNumberPrefix === true) {
                     validPhoneNumbers.push(secondValidity); 
-                    //console.log(validPhoneNumbers.lenght);
+                 
                 } else {
                     invalidPhoneNumbers.push(secondValidity);
                 }  
@@ -182,9 +182,6 @@ function sortNumber(){
     }
     
    
-    console.log(lengthOfArray);
-    console.log(invalidPhoneNumbers.length);
-    console.log(validPhoneNumbers.length);
  
 }
 
